@@ -16,7 +16,6 @@
 - name: Install selinux policy support packages
   package:
     name: policycoreutils-python
-  when: ansible_os_family == "RedHat"
 
 - name: Create data dir
   file:
